@@ -1,0 +1,26 @@
+# sendhci
+This little binary allows you to send any HCI command that you wish to the Bluetooth chip of your macOS device.
+
+## usage example:
+```console
+user@mac:~$ ./sendhci fc4d0500000000fb
+4dfc0500000000fb
+HCI Command sent successfully!
+040E FF01 4DFC 0006 0000 ea5c f09f e55c ....M......\...\
+f09f e55c f09f e55c f09f e55c f09f e55c ...\...\...\...\
+f09f e55c f09f e52c 809f e500 2098 e534 ...\...,.... ..4
+809f e508 0052 e101 0000 1a1c 809f e508 .....R..........
+f0a0 e11c 809f e500 2098 e518 809f e508 ........ .......
+0052 e115 0000 0afe ffff eac8 0000 fca8 .R..............
+0000 fc00 0000 fcc8 0000 0043 6f70 7900 ...........Copy.
+0008 0004 0008 0008 0008 000c 0008 0010 ................
+0008 0014 0008 0018 0008 0000 0000 0000 ................
+0000 0000 0000 0000 0000 0000 0000 0000 ................
+0000 0000 0000 0000 0000 0000 0000 000c ................
+d09f e547 0000 eb00 00a0 e100 d09f e500 ...G............
+f09f e5a0 d008 005c 0100 002d 2e03 0043 .......\...-...C
+6f70 7972 6967 6874 2028 6329 2042 726f opyright (c) Bro
+6164 636f 6d20 436f 7270 2e20 3230 3034 adcom Corp. 2004
+2042 434d 3230 3435 2028 7229 2042 6c75  BCM2045 (r) Blu
+6574
+```
