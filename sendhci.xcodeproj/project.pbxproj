@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8CBA3A0F2450A3B6001AB873 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA3A0E2450A3B6001AB873 /* main.swift */; };
+		8CBA3A192450A4DA001AB873 /* HCICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA3A182450A4DA001AB873 /* HCICommunicator.m */; };
+		8CBA3A1B2450A59F001AB873 /* HCIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA3A1A2450A59F001AB873 /* HCIDelegate.swift */; };
+		8CBA3A202450A829001AB873 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBA3A1F2450A829001AB873 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		8CBA3A0B2450A3B6001AB873 /* sendhci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sendhci; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBA3A0E2450A3B6001AB873 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8CBA3A152450A497001AB873 /* IOBluetoothHostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOBluetoothHostController.h; sourceTree = "<group>"; };
+		8CBA3A162450A4C7001AB873 /* sendhci-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sendhci-Bridging-Header.h"; sourceTree = "<group>"; };
+		8CBA3A172450A4DA001AB873 /* HCICommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCICommunicator.h; sourceTree = "<group>"; };
+		8CBA3A182450A4DA001AB873 /* HCICommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCICommunicator.m; sourceTree = "<group>"; };
+		8CBA3A1A2450A59F001AB873 /* HCIDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HCIDelegate.swift; sourceTree = "<group>"; };
+		8CBA3A1F2450A829001AB873 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				8CBA3A0E2450A3B6001AB873 /* main.swift */,
+				8CBA3A152450A497001AB873 /* IOBluetoothHostController.h */,
+				8CBA3A162450A4C7001AB873 /* sendhci-Bridging-Header.h */,
+				8CBA3A172450A4DA001AB873 /* HCICommunicator.h */,
+				8CBA3A182450A4DA001AB873 /* HCICommunicator.m */,
+				8CBA3A1A2450A59F001AB873 /* HCIDelegate.swift */,
+				8CBA3A1F2450A829001AB873 /* Extensions.swift */,
 			);
 			path = sendhci;
 			sourceTree = "<group>";
@@ -120,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBA3A1B2450A59F001AB873 /* HCIDelegate.swift in Sources */,
+				8CBA3A192450A4DA001AB873 /* HCICommunicator.m in Sources */,
 				8CBA3A0F2450A3B6001AB873 /* main.swift in Sources */,
+				8CBA3A202450A829001AB873 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +265,7 @@
 				DEVELOPMENT_TEAM = 27U966V459;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sendhci/sendhci-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -258,6 +277,7 @@
 				DEVELOPMENT_TEAM = 27U966V459;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sendhci/sendhci-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
